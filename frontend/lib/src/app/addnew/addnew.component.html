@@ -1,0 +1,18 @@
+
+<div class="container pt-5 mt-5">
+    <h1>ADD BOOKS</h1>
+    <br>
+    <form [formGroup]="bookform" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" 
+                formControlName="title">
+        </div>
+        <div class="mb-3">
+            <label for="author" class="form-label">Author</label>
+            <input type="text" class="form-control" id="type" formControlName="type">
+        </div>
+
+        <button type="submit" class="btn btn-dark"  >Submit</button>
+    </form>
+</div>

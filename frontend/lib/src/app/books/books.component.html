@@ -1,0 +1,58 @@
+<!-- <h1>shifas</h1>
+
+
+<div class="header-container w-100">
+
+
+
+    <div class="header-image w-100 h-100"></div>
+    <div class="header-text-container w-100 h-100">
+        <h1 class="text-wrap" style="text-align:center ; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: larger;
+        padding: 9px;">
+          <u>{{books.title}}</u></h1>
+    </div>
+    <div class="header-button">
+        <p style="padding:10px">{{books.author}}</p>
+    </div>
+</div>
+<div class="main2-down-container mt-2 d-flex flex-column">
+    <div class="populer-collections w-100">
+        <h1 class="text-wrap" style="font-size:medium ; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;padding: 9px;" >
+            {{books.description}} </h1>
+
+    </div>
+    
+  
+  
+  
+
+
+   
+
+    </div>
+     -->
+
+
+     <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">description</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books;let i=index">
+                <th scope="row">{{i+1}}</th>
+                <td  class="text-break">{{book.title}}</td>
+                <td  class="text-break">{{book.author}}</td>
+                <td  class="text-break">{{book.description}}</td>
+                <td>
+                    <button type="button" routerLink="/editbooks/{{book._id}}" class="btn btn-dark  mr-2 mb-2">Edit</button>
+                    <button type="button" (click)="deleteBook(book._id)" class="btn btn-dark mb-2">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>

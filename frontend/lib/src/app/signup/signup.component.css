@@ -1,0 +1,15 @@
+h1
+{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	margin-bottom: 30px;
+	color: darkorchid;
+}
+
+.container{
+	background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg);
+	margin-left: 10%;
+padding-right: 10%;
+	margin-top: 10%;
+    
+}
